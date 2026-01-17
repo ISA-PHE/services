@@ -67,8 +67,7 @@
       const date = item.date ? esc(item.date) : "";
       const url = esc(item.url || "#");
       const cta = esc(item.cta || "Open");
-      const target = item.newTab ? ' target="_blank" rel="noopener noreferrer"' : "";
-
+      const target = item.newTab === true ? ' target="_blank" rel="noopener noreferrer"' : '';
       const img = item.image ? esc(item.image) : "";
       const duration = item.duration ? esc(item.duration) : "";
       const level = item.level ? esc(item.level) : "";
