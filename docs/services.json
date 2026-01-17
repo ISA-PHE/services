@@ -28,7 +28,7 @@
       "image": "https://isa-phe.github.io/services/assets/PHE_ELJ_The Monopoly Effect.jpg",
       "duration": "5 days",
       "level": "Entry",
-      "audience": "Researchers, Educators, Leaders, Medical Staff, Teenagers 13+,GP",
+      "audience": "Researchers, Educators, Leaders, Medical Staff, Teenagers 13+, GP",
       "startingPrice": "CHF 800 pP excl. Boarding, Travel, Insurance, special Needs"
     },
     {
@@ -42,21 +42,21 @@
       "image": "https://isa-phe.github.io/services/assets/PHE_ELJ_Harmony_Quest.jpg",
       "duration": "5 days",
       "level": "Entry",
-      "audience": "Educators, Leaders, Politicians, Teenagers 13+,GP",
+      "audience": "Educators, Leaders, Politicians, Teenagers 13+, GP",
       "startingPrice": "CHF 800 pP excl. Boarding, Travel, Insurance, special Needs"
     },
     {
       "id": "elj-homebase-journey-03",
       "category": "Experiential Learning Journeys",
       "title": "The Epic Quest for Infinite Knowledge",
-      "text": "Together, we explore how learning spaces, methods, and experiences can be reimagined as environments that allow knowledge, wisdom, responsibility and joy to grow together. This quest is an invitation to rethink how we learn. And, in doing so, how we shape the future.",
+      "text": "We explore how learning spaces, methods, and experiences can be reimagined as places that allow knowledge, wisdom, responsibility and joy to grow together. This quest is an invitation to rethink how we learn, and how we shape the a different future.",
       "date": "2026-01-17",
       "url": "https://www.projecthomebase.earth/academy",
       "newTab": true,
       "image": "https://isa-phe.github.io/services/assets/PHE_ELJ_Knowledge_Quest.jpg",
       "duration": "5 days",
       "level": "Entry",
-      "audience": "Educators, Leaders, Parents, Teenagers 13+,GP",
+      "audience": "Educators, Leaders, Parents, Teenagers 13+, GP",
       "startingPrice": "CHF 800 pP excl. Boarding, Travel, Insurance, special Needs"
     },
     {
@@ -70,7 +70,7 @@
       "image": "https://isa-phe.github.io/services/assets/PHE_ELJ_Adolescent_Mind.jpg",
       "duration": "5 days",
       "level": "Entry",
-      "audience": "Educators, Leaders, Parents, Teenagers 13+,GP",
+      "audience": "Educators, Leaders, Parents, Teenagers 13+, GP",
       "startingPrice": "CHF 800 pP excl. Boarding, Travel, Insurance, special Needs"
     },
     {
