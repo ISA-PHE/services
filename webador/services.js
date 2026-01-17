@@ -1,5 +1,8 @@
 (function () {
   const DATA_URL = "https://isa-phe.github.io/services/services.json";
+  const ROOT_ID = "hbe-services";
+  const MAX_WAIT_MS = 15000;
+  const POLL_MS = 150;
 
   function esc(s) {
     return String(s)
@@ -28,27 +31,23 @@
     });
   }
 
-  function ensureMounted() {
-    const root = document.getElementById("hbe-services");
-    if (!root) return null;
-
-    const grid = root.querySelector("#hbeServicesGrid");
-    const foot = root.querySelector("#hbeServicesFoot");
-    const pills = Array.from(root.querySelectorAll(".hbe-services__pill"));
-
-    return { root, grid, foot, pills };
-  }
-
   async function loadData() {
     const bust = (DATA_URL.includes("?") ? "&" : "?") + "v=" + Date.now();
     const res = await fetch(DATA_URL + bust, { cache: "no-store" });
     if (!res.ok) throw new Error("HTTP " + res.status);
-    return await res.json();
+    const data = await res.json();
+    return Array.isArray(data.items) ? data.items : [];
+  }
+
+  function mount(root) {
+    const grid = root.querySelector("#hbeServicesGrid");
+    const foot = root.querySelector("#hbeServicesFoot");
+    const pills = Array.from(root.querySelectorAll(".hbe-services__pill"));
+    if (!grid || !foot || !pills.length) return null;
+    return { root, grid, foot, pills };
   }
 
   function render(m, allItems, activeCat) {
-    const { grid, foot } = m;
-
     const filtered = activeCat === "__all"
       ? allItems
       : allItems.filter(x => x.category === activeCat);
@@ -56,12 +55,12 @@
     const items = sortItems(filtered);
 
     if (!items.length) {
-      grid.innerHTML = '<div class="hbe-services__loading">No items found in this category.</div>';
-      foot.textContent = "";
+      m.grid.innerHTML = '<div class="hbe-services__loading">No items found in this category.</div>';
+      m.foot.textContent = "";
       return;
     }
 
-    grid.innerHTML = items.map(item => {
+    m.grid.innerHTML = items.map(item => {
       const title = esc(item.title || "");
       const text = esc(item.text || "");
       const cat = esc(item.category || "");
@@ -83,7 +82,7 @@
       );
     }).join("");
 
-    foot.textContent = "Showing " + items.length + " item" + (items.length === 1 ? "" : "s") + ".";
+    m.foot.textContent = "Showing " + items.length + " item" + (items.length === 1 ? "" : "s") + ".";
   }
 
   function setActive(m, allItems, cat) {
@@ -95,34 +94,38 @@
     render(m, allItems, cat);
   }
 
-  async function init() {
-    const m = ensureMounted();
-    if (!m) return;
+  async function initWhenReady() {
+    const start = Date.now();
 
-    m.grid.innerHTML = '<div class="hbe-services__loading">Loading…</div>';
-    m.foot.textContent = "";
+    while (Date.now() - start < MAX_WAIT_MS) {
+      const root = document.getElementById(ROOT_ID);
+      if (root) {
+        const m = mount(root);
+        if (!m) break;
 
-    let allItems = [];
-    try {
-      const data = await loadData();
-      allItems = Array.isArray(data.items) ? data.items : [];
-    } catch (e) {
-      m.grid.innerHTML = '<div class="hbe-services__loading">Data unavailable. Open the JSON endpoint to verify it exists.</div>';
-      return;
+        m.grid.innerHTML = '<div class="hbe-services__loading">Loading…</div>';
+        m.foot.textContent = "";
+
+        try {
+          const allItems = await loadData();
+          m.pills.forEach(btn => {
+            btn.addEventListener("click", function () {
+              setActive(m, allItems, btn.dataset.cat);
+            });
+          });
+          setActive(m, allItems, "__all");
+        } catch (e) {
+          m.grid.innerHTML = '<div class="hbe-services__loading">Data unavailable. Please refresh.</div>';
+          m.foot.textContent = "";
+        }
+        return;
+      }
+      await new Promise(r => setTimeout(r, POLL_MS));
     }
 
-    m.pills.forEach(btn => {
-      btn.addEventListener("click", function () {
-        setActive(m, allItems, btn.dataset.cat);
-      });
-    });
-
-    setActive(m, allItems, "__all");
+    // If we get here, Webador likely moved/removed the embed or the id changed
+    // We do nothing to avoid breaking the page.
   }
 
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", init);
-  } else {
-    init();
-  }
+  initWhenReady();
 })();
