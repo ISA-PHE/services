@@ -11,7 +11,7 @@
       "url": "https://www.projecthomebase.earth/the-monopoly-effect",
       "newTab": true,
       "featured": true,
-      "image": "https://isa-phe.github.io/services/assets/Project_Homebase_Earth-The_Monopoly_Effect_Book_Title.jpg",
+      "image": "https://isa-phe.github.io/services/assets/Project_Homebase_Earth-The_Monopoly_Effect_Book_Mockup.jpg",
       "duration": "Self-paced",
       "level": "Advanced",
       "audience": "Researchers, Educators, Medical Professionals, Policy-makers",
@@ -20,16 +20,16 @@
     {
       "id": "elj-homebase-journey-01",
       "category": "Experiential Learning Journeys",
-      "title": "Homebase Earth Learning Journey",
+      "title": "The Monopoly Effect",
       "text": "Immersive, real-world learning formats aligned with biosphere-centric development.",
-      "date": "2026-01-05",
-      "url": "https://www.projecthomebase.earth",
+      "date": "2026-01-17",
+      "url": "https://www.projecthomebase.earth/academy",
       "newTab": true,
-      "image": "https://isa-phe.github.io/services/assets/homebase-journey.jpg",
-      "duration": "2 to 5 days",
-      "level": "Beginner to Advanced",
-      "audience": "Teams, educators, founders",
-      "startingPrice": "From CHF 2,500"
+      "image": "https://isa-phe.github.io/services/assets/PHE_ELJ_The Monopoly Effect.jpg",
+      "duration": "5 days",
+      "level": "Entry",
+      "audience": "General Public, Educators, Leaders, Medical Professionals, Researchers, Teenagers 13+",
+      "startingPrice": "From CHF 800 per Person excl. Boarding"
     },
     {
       "id": "cp-research-commission-01",
