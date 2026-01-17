@@ -10,7 +10,12 @@
       "date": "2026-01-02",
       "url": "https://www.projecthomebase.earth/the-monopoly-effect",
       "newTab": true,
-      "featured": true
+      "featured": true,
+      "image": "https://isa-phe.github.io/services/assets/monopoly-effect.jpg",
+      "duration": "Self-paced",
+      "level": "Advanced",
+      "audience": "Researchers, leaders, policy designers",
+      "startingPrice": "Free / Book purchase"
     },
     {
       "id": "elj-homebase-journey-01",
@@ -19,7 +24,12 @@
       "text": "Immersive, real-world learning formats aligned with biosphere-centric development.",
       "date": "2026-01-05",
       "url": "https://www.projecthomebase.earth",
-      "newTab": true
+      "newTab": true,
+      "image": "https://isa-phe.github.io/services/assets/homebase-journey.jpg",
+      "duration": "2 to 5 days",
+      "level": "Beginner to Advanced",
+      "audience": "Teams, educators, founders",
+      "startingPrice": "From CHF 2,500"
     },
     {
       "id": "cp-research-commission-01",
@@ -28,7 +38,12 @@
       "text": "Applied research, analysis, and systems design for aligned organizations.",
       "date": "2026-01-06",
       "url": "https://www.projecthomebase.earth/contribution-hub",
-      "newTab": true
+      "newTab": true,
+      "image": "https://isa-phe.github.io/services/assets/commissioned-research.jpg",
+      "duration": "Project-based",
+      "level": "Professional",
+      "audience": "Institutions, NGOs, mission-driven companies",
+      "startingPrice": "On request"
     },
     {
       "id": "ev-speaking-01",
@@ -37,7 +52,12 @@
       "text": "Speaking engagements on development, decision quality, institutions, and systems.",
       "date": "2026-01-07",
       "url": "https://journal.projecthomebase.earth",
-      "newTab": true
+      "newTab": true,
+      "image": "https://isa-phe.github.io/services/assets/speaking.jpg",
+      "duration": "60–120 minutes",
+      "level": "General to Expert",
+      "audience": "Conferences, universities, leadership teams",
+      "startingPrice": "On request"
     }
   ]
 }
