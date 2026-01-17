@@ -1,4 +1,4 @@
-(function () {
+  (function () {
   const DATA_URL = "https://isa-phe.github.io/services/services.json";
   const ROOT_ID = "hbe-services";
   const MAX_WAIT_MS = 15000;
@@ -76,10 +76,10 @@
       const startingPrice = item.startingPrice ? esc(item.startingPrice) : "";
 
       const facts = [];
-      if (duration) facts.push('<div class="hbe-services__fact"><b>Duration</b>' + duration + '</div>');
-      if (level) facts.push('<div class="hbe-services__fact"><b>Level</b>' + level + '</div>');
-      if (audience) facts.push('<div class="hbe-services__fact"><b>Audience</b>' + audience + '</div>');
-      if (startingPrice) facts.push('<div class="hbe-services__fact"><b>Starting price</b>' + startingPrice + '</div>');
+      if (duration) facts.push('<div class="hbe-services__fact"><b>Duration</b><span>' + duration + '</span></div>');
+      if (level) facts.push('<div class="hbe-services__fact"><b>Level</b><span>' + level + '</span></div>');
+      if (audience) facts.push('<div class="hbe-services__fact"><b>Audience</b><span>' + audience + '</span></div>');
+      if (startingPrice) facts.push('<div class="hbe-services__fact"><b>From</b><span>' + startingPrice + '</span></div>');
 
       return (
         '<div class="hbe-services__card">' +
