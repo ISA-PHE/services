@@ -31,7 +31,7 @@
     });
   }
 
-  async function loadData() {
+  async function loadItems() {
     const bust = (DATA_URL.includes("?") ? "&" : "?") + "v=" + Date.now();
     const res = await fetch(DATA_URL + bust, { cache: "no-store" });
     if (!res.ok) throw new Error("HTTP " + res.status);
@@ -69,14 +69,35 @@
       const cta = esc(item.cta || "Open");
       const target = item.newTab ? ' target="_blank" rel="noopener noreferrer"' : "";
 
+      const img = item.image ? esc(item.image) : "";
+      const duration = item.duration ? esc(item.duration) : "";
+      const level = item.level ? esc(item.level) : "";
+      const audience = item.audience ? esc(item.audience) : "";
+      const startingPrice = item.startingPrice ? esc(item.startingPrice) : "";
+
+      const facts = [];
+      if (duration) facts.push('<div class="hbe-services__fact"><b>Duration</b>' + duration + '</div>');
+      if (level) facts.push('<div class="hbe-services__fact"><b>Level</b>' + level + '</div>');
+      if (audience) facts.push('<div class="hbe-services__fact"><b>Audience</b>' + audience + '</div>');
+      if (startingPrice) facts.push('<div class="hbe-services__fact"><b>Starting price</b>' + startingPrice + '</div>');
+
       return (
         '<div class="hbe-services__card">' +
           '<div class="hbe-services__meta">' +
             '<div class="hbe-services__cat">' + cat + '</div>' +
             (date ? '<div class="hbe-services__date">' + date + '</div>' : '') +
           '</div>' +
-          '<div class="hbe-services__card-title">' + title + '</div>' +
-          '<div class="hbe-services__text">' + text + '</div>' +
+
+          '<div class="hbe-services__row">' +
+            (img ? '<img class="hbe-services__img" src="' + img + '" alt="" loading="lazy" />' : '') +
+            '<div class="hbe-services__body">' +
+              '<div class="hbe-services__card-title">' + title + '</div>' +
+              '<div class="hbe-services__text">' + text + '</div>' +
+            '</div>' +
+          '</div>' +
+
+          (facts.length ? '<div class="hbe-services__facts">' + facts.join("") + '</div>' : '') +
+
           '<a class="hbe-services__cta" href="' + url + '"' + target + '>' + cta + '</a>' +
         '</div>'
       );
@@ -101,30 +122,30 @@
       const root = document.getElementById(ROOT_ID);
       if (root) {
         const m = mount(root);
-        if (!m) break;
+        if (!m) return;
 
         m.grid.innerHTML = '<div class="hbe-services__loading">Loading…</div>';
         m.foot.textContent = "";
 
+        let allItems = [];
         try {
-          const allItems = await loadData();
-          m.pills.forEach(btn => {
-            btn.addEventListener("click", function () {
-              setActive(m, allItems, btn.dataset.cat);
-            });
-          });
-          setActive(m, allItems, "__all");
+          allItems = await loadItems();
         } catch (e) {
           m.grid.innerHTML = '<div class="hbe-services__loading">Data unavailable. Please refresh.</div>';
-          m.foot.textContent = "";
+          return;
         }
+
+        m.pills.forEach(btn => {
+          btn.addEventListener("click", function () {
+            setActive(m, allItems, btn.dataset.cat);
+          });
+        });
+
+        setActive(m, allItems, "__all");
         return;
       }
       await new Promise(r => setTimeout(r, POLL_MS));
     }
-
-    // If we get here, Webador likely moved/removed the embed or the id changed
-    // We do nothing to avoid breaking the page.
   }
 
   initWhenReady();
