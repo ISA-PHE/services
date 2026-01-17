@@ -1,4 +1,4 @@
-  (function () {
+(function () {
   const DATA_URL = "https://isa-phe.github.io/services/services.json";
   const ROOT_ID = "hbe-services";
   const MAX_WAIT_MS = 15000;
@@ -75,11 +75,23 @@
       const audience = item.audience ? esc(item.audience) : "";
       const startingPrice = item.startingPrice ? esc(item.startingPrice) : "";
 
-      const facts = [];
-      if (duration) facts.push('<div class="hbe-services__fact"><b>Duration</b><span>' + duration + '</span></div>');
-      if (level) facts.push('<div class="hbe-services__fact"><b>Level</b><span>' + level + '</span></div>');
-      if (audience) facts.push('<div class="hbe-services__fact"><b>Audience</b><span>' + audience + '</span></div>');
-      if (startingPrice) facts.push('<div class="hbe-services__fact"><b>From</b><span>' + startingPrice + '</span></div>');
+      const line1 = [];
+      if (duration) line1.push('<span class="hbe-services__fact"><b>Duration</b><span>' + duration + '</span></span>');
+      if (level) line1.push('<span class="hbe-services__fact"><b>Level</b><span>' + level + '</span></span>');
+      if (startingPrice) line1.push('<span class="hbe-services__fact"><b>From</b><span>' + startingPrice + '</span></span>');
+
+      const line2 = [];
+      if (audience) line2.push('<span class="hbe-services__fact"><b>Audience</b><span>' + audience + '</span></span>');
+
+      const factsHtml =
+        (line1.length || line2.length)
+          ? (
+              '<div class="hbe-services__facts">' +
+                (line1.length ? '<div class="hbe-services__facts-line">' + line1.join("") + '</div>' : '') +
+                (line2.length ? '<div class="hbe-services__facts-line">' + line2.join("") + '</div>' : '') +
+              '</div>'
+            )
+          : '';
 
       return (
         '<div class="hbe-services__card">' +
@@ -89,14 +101,14 @@
           '</div>' +
 
           '<div class="hbe-services__row">' +
-            (img ? '<img class="hbe-services__img" src="' + img + '" alt="" loading="lazy" />' : '') +
+            (img ? '<img class="hbe-services__img" src="' + img + '" alt="" loading="lazy" onerror="this.style.display=\\'none\\'" />' : '') +
             '<div class="hbe-services__body">' +
               '<div class="hbe-services__card-title">' + title + '</div>' +
               '<div class="hbe-services__text">' + text + '</div>' +
             '</div>' +
           '</div>' +
 
-          (facts.length ? '<div class="hbe-services__facts">' + facts.join("") + '</div>' : '') +
+          factsHtml +
 
           '<a class="hbe-services__cta" href="' + url + '"' + target + '>' + cta + '</a>' +
         '</div>'
