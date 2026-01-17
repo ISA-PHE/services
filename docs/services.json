@@ -14,7 +14,7 @@
       "image": "https://isa-phe.github.io/services/assets/Project_Homebase_Earth-The_Monopoly_Effect_Book_Mockup.jpg",
       "duration": "Self-paced",
       "level": "Advanced",
-      "audience": "Researchers, Educators, Medical Professionals, Policy-makers",
+      "audience": "Researchers, Educators, Medical Staff, Policy-makers",
       "startingPrice": "CHF 59 excl. shipping"
     },
     {
@@ -28,8 +28,8 @@
       "image": "https://isa-phe.github.io/services/assets/PHE_ELJ_The Monopoly Effect.jpg",
       "duration": "5 days",
       "level": "Entry",
-      "audience": "General Public, Educators, Leaders, Medical Professionals, Researchers, Teenagers 13+",
-      "startingPrice": "From CHF 800 per Person excl. Boarding"
+      "audience": "Researchers, Educators, Leaders, Medical Staff, Teenagers 13+,GP",
+      "startingPrice": "CHF 800 pP excl. Boarding, Travel, Insurance"
     },
     {
       "id": "cp-research-commission-01",
