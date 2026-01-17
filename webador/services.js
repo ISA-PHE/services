@@ -101,7 +101,7 @@
           '</div>' +
 
           '<div class="hbe-services__row">' +
-            (img ? '<img class="hbe-services__img" src="' + img + '" alt="" loading="lazy" onerror="this.style.display=\\'none\\'" />' : '') +
+            (img ? '<img class="hbe-services__img" src="' + img + '" alt="" loading="lazy" onerror="this.style.display=\'none\'" />' : '') +
             '<div class="hbe-services__body">' +
               '<div class="hbe-services__card-title">' + title + '</div>' +
               '<div class="hbe-services__text">' + text + '</div>' +
