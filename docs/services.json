@@ -46,6 +46,34 @@
       "startingPrice": "CHF 800 pP excl. Boarding, Travel, Insurance, special Needs"
     },
     {
+      "id": "elj-homebase-journey-03",
+      "category": "Experiential Learning Journeys",
+      "title": "The Epic Quest for Infinite Knowledge",
+      "text": "Together, we explore how learning spaces, methods, and experiences can be reimagined as environments that allow knowledge, wisdom, responsibility and joy to grow together. This quest is an invitation to rethink how we learn. And, in doing so, how we shape the future.",
+      "date": "2026-01-17",
+      "url": "https://www.projecthomebase.earth/academy",
+      "newTab": true,
+      "image": "https://isa-phe.github.io/services/assets/PHE_ELJ_Knowledge_Quest.jpg",
+      "duration": "5 days",
+      "level": "Entry",
+      "audience": "Educators, Leaders, Parents, Teenagers 13+,GP",
+      "startingPrice": "CHF 800 pP excl. Boarding, Travel, Insurance, special Needs"
+    },
+    {
+      "id": "elj-homebase-journey-04",
+      "category": "Experiential Learning Journeys",
+      "title": "The Rise of the Adolescent Mind",
+      "text": "This journey leads toward a personal framework for engaging adolescence consciously in everyday life by learning how to navigate it. Welcome to the storm of youth where development accelerates, perception widens, and the foundations of adult life take shape.",
+      "date": "2026-01-17",
+      "url": "https://www.projecthomebase.earth/academy",
+      "newTab": true,
+      "image": "https://isa-phe.github.io/services/assets/PHE_ELJ_Adolescent_Mind.jpg",
+      "duration": "5 days",
+      "level": "Entry",
+      "audience": "Educators, Leaders, Parents, Teenagers 13+,GP",
+      "startingPrice": "CHF 800 pP excl. Boarding, Travel, Insurance, special Needs"
+    },
+    {
       "id": "cp-research-commission-01",
       "category": "Commissioned Projects",
       "title": "Commissioned Research and Design",
