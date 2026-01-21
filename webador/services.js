@@ -66,7 +66,7 @@
       const cat = esc(item.category || "");
       const date = item.date ? esc(item.date) : "";
       const url = esc(item.url || "#");
-      const cta = esc(item.cta || "Open");
+      const cta = esc(item.cta || "Details and Booking");
       const target = (function(){ try{ return (new URL(item.url, location.href).hostname !== location.hostname) ? ' target="_blank" rel="noopener noreferrer"' : ''; } catch(e){ return ''; } })();
       const img = item.image ? esc(item.image) : "";
       const duration = item.duration ? esc(item.duration) : "";
