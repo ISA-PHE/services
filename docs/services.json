@@ -75,16 +75,16 @@
     },
     {
       "id": "cp-research-commission-01",
-      "category": "Commissioned Projects",
-      "title": "Commissioned Research and Design",
-      "text": "Applied research, analysis, and systems design for aligned organizations.",
-      "date": "2026-01-06",
-      "url": "https://www.projecthomebase.earth/contribution-hub",
+      "category": "Projects & Studies",
+      "title": "Commissioned Projects and Studies",
+      "text": "We are publishing upcoming projects and studies soon. Meanwhile visit our R&D institute here on our website.",
+      "date": "2026-01-23",
+      "url": "https://www.projecthomebase.earth/r-d-institute",
       "newTab": true,
-      "image": "https://isa-phe.github.io/services/assets/commissioned-research.jpg",
+      "image": "https://isa-phe.github.io/services/assets/PHE_Services_warm.jpg",
       "duration": "Project-based",
       "level": "Professional",
-      "audience": "Institutions, NGOs, mission-driven companies",
+      "audience": "Researchers, Educators, Medical Staff, Scientists, GP",
       "startingPrice": "On request"
     },
     {
