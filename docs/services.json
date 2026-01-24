@@ -89,17 +89,17 @@
     },
     {
       "id": "ev-speaking-01",
-      "category": "Events & Speaking Engagements",
-      "title": "Talks and Keynotes",
-      "text": "Speaking engagements on development, decision quality, institutions, and systems.",
-      "date": "2026-01-07",
-      "url": "https://www.projecthomebase.earth/academy",
+      "category": "Speaking Engagements",
+      "title": "Talks, Keynotes and Roundtables",
+      "text": "Speaking engagements on the 6 key: The Monopoly Effect & CIM-Systems • Natural Human Habitat & Education • Identifications & Suffering • Neurophilosophy & Ethics • Core Theory of Development • Intergenerational Justice and Resources.",
+      "date": "2026-01-24",
+      "url": "https://www.projecthomebase.earth/speaking-engagement",
       "newTab": true,
       "image": "https://isa-phe.github.io/services/assets/PHE_TV.jpg",
-      "duration": "60–120 minutes",
-      "level": "Beginner to Expert",
-      "audience": "Educators, Leaders, Politicians, Institutations (PMB, NGO, NPO)",
-      "startingPrice": "CHF 800"
+      "duration": "On request",
+      "level": "Beginner to Professional",
+      "audience": "Educators • Leaders • Teams • Scientists • Medical staff • Teenagers 13+ • Parents • Institutations (PMB, NGO, NPO), GP",
+      "startingPrice": "CHF 800 (excl. expenses)"
     }
   ]
 }
