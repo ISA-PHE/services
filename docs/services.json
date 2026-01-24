@@ -29,7 +29,7 @@
       "duration": "5 days",
       "level": "Advanced Beginners",
       "audience": "Researchers • Educators • Leaders • Medical Staff • Teenagers 13+ • Institutions (PMB, NGO, NPO) • GP",
-      "startingPrice": "CHF 800 pP excl. Boarding, Travel, Insurance, special Needs"
+      "startingPrice": "CHF 800 pP"
     },
     {
       "id": "elj-homebase-journey-02",
@@ -43,7 +43,7 @@
       "duration": "5 days",
       "level": "Beginners",
       "audience": "Educators • Leaders • Politicians • Teenagers 13+ • Institutions (PMB, NGO, NPO) • GP",
-      "startingPrice": "CHF 800 pP excl. Boarding, Travel, Insurance, special Needs"
+      "startingPrice": "CHF 800 pP"
     },
     {
       "id": "elj-homebase-journey-03",
@@ -57,7 +57,7 @@
       "duration": "5 days",
       "level": "Entry",
       "audience": "Educators • Leaders • Parents • Teenagers 13+ • Institutions (PMB, NGO, NPO) • GP",
-      "startingPrice": "CHF 800 pP excl. Boarding, Travel, Insurance, special Needs"
+      "startingPrice": "CHF 800 pP"
     },
     {
       "id": "elj-homebase-journey-04",
@@ -71,7 +71,7 @@
       "duration": "5 days",
       "level": "Entry",
       "audience": "Educators • Leaders • Parents • Teenagers 13+ • Institutions (PMB, NGO, NPO) • GP",
-      "startingPrice": "CHF 800 pP excl. Boarding, Travel, Insurance, special Needs"
+      "startingPrice": "CHF 800 pP"
     },
     {
       "id": "cp-research-commission-01",
@@ -99,7 +99,7 @@
       "duration": "On request",
       "level": "Beginner to Expert",
       "audience": "Educators • Leaders • Teams • Scientists • Medical staff • Teenagers 13+ • Parents • Institutions (PMB, NGO, NPO) • GP",
-      "startingPrice": "CHF 800"
+      "startingPrice": "CHF 800 per speaker"
     }
   ]
 }
