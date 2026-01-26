@@ -46,48 +46,6 @@
       "startingPrice": "CHF 800 pP"
     },
     {
-      "id": "elj-homebase-journey-03",
-      "category": "Experiential Learning Journeys",
-      "title": "The Epic Quest for Infinite Knowledge",
-      "text": "We explore how learning spaces, methods, and experiences can be reimagined as places that allow knowledge, wisdom, responsibility and joy to grow together. This quest is an invitation to rethink how we learn, and how we shape the a different future.",
-      "date": "2026-01-17",
-      "url": "https://www.projecthomebase.earth/academy",
-      "newTab": true,
-      "image": "https://isa-phe.github.io/services/assets/PHE_ELJ_Knowledge_Quest.jpg",
-      "duration": "5 days",
-      "level": "Entry",
-      "audience": "Educators • Leaders • Parents • Teenagers 13+ • Institutions (PMB, NGO, NPO) • GP",
-      "startingPrice": "CHF 800 pP"
-    },
-    {
-      "id": "elj-homebase-journey-04",
-      "category": "Experiential Learning Journeys",
-      "title": "The Rise of the Adolescent Mind",
-      "text": "This journey leads toward a personal framework for engaging adolescence consciously in everyday life by learning how to navigate it. Welcome to the storm of youth where development accelerates, perception widens, and the foundations of adult life take shape.",
-      "date": "2026-01-17",
-      "url": "https://www.projecthomebase.earth/academy",
-      "newTab": true,
-      "image": "https://isa-phe.github.io/services/assets/PHE_ELJ_Adolescent_Mind.jpg",
-      "duration": "5 days",
-      "level": "Entry",
-      "audience": "Educators • Leaders • Parents • Teenagers 13+ • Institutions (PMB, NGO, NPO) • GP",
-      "startingPrice": "CHF 800 pP"
-    },
-    {
-      "id": "cp-research-commission-01",
-      "category": "Projects & Studies",
-      "title": "Commissioned Projects and Studies",
-      "text": "We are publishing upcoming projects and studies soon. Meanwhile visit our R&D institute here on our website.",
-      "date": "2026-01-23",
-      "url": "https://www.projecthomebase.earth/r-d-institute",
-      "newTab": true,
-      "image": "https://isa-phe.github.io/services/assets/PHE_Services_warm.jpg",
-      "duration": "Project-based",
-      "level": "Professional",
-      "audience": "Researchers • Educators • Medical Staff • Scientists • Institutions (PMB, NGO, NPO) • GP",
-      "startingPrice": "On request"
-    },
-    {
       "id": "ev-speaking-01",
       "category": "Speaking Engagements",
       "title": "Talks, Keynotes and Roundtables",
