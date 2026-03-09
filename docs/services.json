@@ -43,6 +43,19 @@
       "startingPrice": "CHF 800 pP"
     },
     {
+      "id": "rd-publication-p4-18785827",
+      "category": "R&D releases",
+      "title": "The Neurophilosophical Architecture of the Human Organism",
+      "text": "Structural systems model of the Neurophilosophical Architecture of the Human Organism. This framework serves a normative-philosophical orientation in continuity with the thesis The Monopoly Effect,",
+      "date": "2026-03-09",
+      "url": "https://doi.org/10.5281/zenodo.18785827",
+      "newTab": true,
+      "image": "https://isa-phe.github.io/services/assets/ISA_PHE_RD_P4_The Neurophilosophical Architecture of the Human Organism.jpg",
+      "duration": "",
+      "level": "Advanced Beginners",
+      "startingPrice": ""
+    },
+    {
       "id": "ev-speaking-01",
       "category": "Events & Speaking Engagements",
       "title": "Talks, Keynotes and Roundtables",
