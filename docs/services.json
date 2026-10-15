@@ -56,6 +56,19 @@
       "startingPrice": ""
     },
     {
+      "id": "rd-publication-p15-23390289",
+      "category": "R&D releases",
+      "title": "C.A.R.E.™ – Collaborative Altruism for Regenerative Engagement",
+      "text": "Comprehensive framework for human life within Earth's natural habitat, integrating ecological stewardship, wholesome human development, relational coherence, and altruistic intelligence to cultivate life-affirming motivations and actions.",
+      "date": "2026-15-10",
+      "url": "https://doi.org/10.5281/zenodo.23390289",
+      "newTab": true,
+      "image": "https://github.com/ISA-PHE/services/assets/ISA%20PHE%20R%26D%20P15%20%20C.A.R.E.%E2%84%A2.png",
+      "duration": "",
+      "level": "Advanced Beginners",
+      "startingPrice": ""
+    },
+    {
       "id": "ev-speaking-01",
       "category": "Events & Speaking Engagements",
       "title": "Talks, Keynotes and Roundtables",
